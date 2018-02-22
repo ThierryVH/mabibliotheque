@@ -91,11 +91,22 @@
 
 		<div class="w3-row">
 			<div class=" w3-padding-16 w3-section w3-row">
+				<form class="w3-row w3-margin-bottom" action="index.html" method="post">
+					<input type="hidden" name="id" value="">
+					<input type="text" name="user_id" placeholder="identifiant de l'utilisateur" class="w3-input w3-col m3">
+					<input type="submit" name="borrow" value="Emprunter le livre" class="w3-button w3-black w3-col m2">
+				</form>
+				<form class="w3-row" action="index.html" method="post">
+					<input type="hidden" name="id" value="">
+					<input type="submit" name="return" value="Restituer" class="w3-button w3-black w3-col m2">
+				</form>
+			</div>
+			<div class=" w3-section w3-row">
 				<!-- MODAL AJOUT BOOK -->
 				<button onclick="document.getElementById('editBook').style.display='block'" class="w3-col m2 l2 w3-button w3-black">Modifier</button>
-				<form class="w3-col m1 w3-margin-left" action="" method="post">
+				<form action="" method="post">
 					<input type="hidden" name="id" value="">
-					<input type="submit" name="delete" value="Supprimer le livre" class="w3-button w3-red">
+					<input type="submit" name="delete" value="Supprimer le livre" class="w3-button w3-red w3-col m2 w3-margin-left">
 				</form>
 			</div>
 
